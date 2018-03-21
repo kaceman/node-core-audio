@@ -406,9 +406,9 @@ void Audio::AudioEngine::RunAudioLoop(){
 		} else {
 			m_bOutputUnderflowed = true;
 #if defined( __WINDOWS__ ) || defined( _WIN32 )
-			Sleep(1);
+			sleep(1);
 #else
-			Sleep(1);
+			sleep(1);
 #endif
 		}
 	}
