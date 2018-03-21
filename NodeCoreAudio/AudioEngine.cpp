@@ -23,7 +23,7 @@
 	#include <unistd.h>
 #endif
 
-using namespace v8; using namespace std;
+using namespace v8; using namespace std; using namespace sleep; using namespace memcpy;
 
 Persistent<Function> Audio::AudioEngine::constructor;
 
