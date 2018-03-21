@@ -23,7 +23,7 @@
 	#include <unistd.h>
 #endif
 
-using namespace v8; using namespace std; using namespace sleep; using namespace memcpy;
+using namespace v8; using namespace std;
 
 Persistent<Function> Audio::AudioEngine::constructor;
 
@@ -408,7 +408,7 @@ void Audio::AudioEngine::RunAudioLoop(){
 #if defined( __WINDOWS__ ) || defined( _WIN32 )
 			Sleep(1);
 #else
-			sleep(1);
+			Sleep(1);
 #endif
 		}
 	}
